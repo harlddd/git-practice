@@ -47,6 +47,7 @@ jobs:
       # run update
       - name: run the update
         run: |
-          apt update
-          apt -y install bsdmainutils
+          sudo apt update
+          sudo apt install -y bsdmainutils
+          cal
           
