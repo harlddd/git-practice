@@ -42,7 +42,7 @@ jobs:
         run: date
       # run os release
       - name: run the os
-        run: cat etc/os/release
+        run: cat /etc/os/release
 
       # run update
       - name: run the update
