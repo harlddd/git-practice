@@ -48,5 +48,5 @@ jobs:
       - name: run the update
         run: 
           sudo apt update
-          sudo apt install -y bsdmainutils
+          sudo apt -y install bsdmainutils
           
