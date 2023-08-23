@@ -36,5 +36,17 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project
+          
+      # run new date    
       - name: Run the date
         run: date
+      # run os release
+      - name: run the os
+        run: cat etc/os/release
+
+      # run update
+      - name: run the update
+        run: 
+          sudo apt update
+          sudo apt install -y bsdmainutils
+          cal
